@@ -1,0 +1,22 @@
+# Hugging Face Transformers (latest from source)
+git+https://github.com/huggingface/transformers.git
+
+# Core dependencies
+torch==2.1.2+cu118       # Adjust CUDA version if needed
+torchaudio==2.1.2+cu118
+torchvision==0.16.2+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+bitsandbytes==0.41.1
+accelerate==0.27.2
+
+# FastAPI and Server
+fastapi==0.110.0
+uvicorn==0.29.0
+nest-asyncio==1.6.0
+
+# Ngrok tunnel
+pyngrok==5.3.0
+
+# Other utilities (optional, for Colab or benchmarking)
+requests==2.31.0
