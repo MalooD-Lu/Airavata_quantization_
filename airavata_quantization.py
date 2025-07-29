@@ -111,7 +111,7 @@ tokenizer.save_pretrained(save_dir)
 #     return {"generated_text": output[0]["generated_text"]}
 #
 
-!ngrok config add-authtoken 30YDTbaj7jktj6lY9j0QhwKZkx5_2D8sbtzf55HNqEScKc8Nf
+!ngrok config add-authtoken ENTER_TOKEN
 
 !pkill -f ngrok
 
