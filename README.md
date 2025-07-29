@@ -13,3 +13,22 @@ This project demonstrates how to **load**, **quantize**, and **serve** the [Ai4B
 
 ---
 
+## 📓 Google Colab Notebook
+
+All the following were implemented in a **single Google Colab notebook**:
+
+- ✅ Quantization using `bitsandbytes`
+- ✅ FastAPI setup with working `/generate` endpoint
+- ✅ ngrok tunneling for external access
+- ✅ Latency and throughput benchmarking
+
+> ⚠️ **Note**: Make sure to enable GPU via  
+> `Runtime > Change runtime type > Hardware accelerator > GPU`.
+
+---
+## 📊 Benchmark Results
+
+| Metric        | Base Model | Quantized Model (4-bit) |
+|---------------|------------------------|---------------------------|
+| **Latency**   | 2046.86 ms        | 2010 ms           |
+| **Throughput**| 0.49 req/sec          | 0.50 req/sec             |
